@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akash portfolio</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(0, 0, 33);
+            color: white;
+
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .images {
+            width: 45%;
+            height: 80%;
+            position: absolute;
+            bottom: 0;
+            right: 100px;
+        }
+
+        .images img {
+            height: 90%;
+            position: absolute;
+            left: 50%;
+            bottom: 0;
+            transform: translateX(-50%);
+            transition: bottom 1s, left 1s;
+        }
+
+        .images:hover .shape {
+            bottom: 40px;
+        }
+
+        .images:hover .akash {
+            left: 45%;
+        }
+
+        .circular--portrait {
+            position: relative;
+            width: 100px;
+            height: 100px;
+            overflow: hidden;
+            border-radius: 50%;
+
+            max-height: 100px;
+
+            /* 
+           max-height: 100px;
+           width: 500px;
+            height: 200px;
+            background-color: green;
+            object-fit: none;
+            object-position: center top;
+            
+            /* String value */
+
+        }
+
+        .circular--portrait img {
+            width: 100%;
+            height: auto;
+        }
+
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 100px;
+            background-color: rgb(18, 18, 62);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover {
+            color: rgb(153, 153, 226);
+            font-size: 1.05rem;
+        }
+
+        main hr {
+            border: 0;
+            background: #9c97f1;
+            height: 1.2px;
+            margin: 240px 100px;
+        }
+
+        .left {
+            font-size: 1.5rem;
+        }
+
+        .firstsection {
+            display: flex;
+            justify-content: space-around;
+            margin: 80px 0;
+        }
+
+        .firstsection>div {
+            width: 30%;
+        }
+
+        .leftsection {
+            font-size: 2.7rem;
+            margin: 30px 0;
+        }
+
+        /* .rightsection img{
+            width:80%;
+        }   */
+
+        .purple {
+            color: rgb(170, 107, 228);
+        }
+
+        #element {
+            color: rgb(170, 107, 228);
+        }
+
+        .p {
+            max-width: 80vw;
+            margin: auto;
+        }
+
+        .secondsection {
+            max-width: 80vw;
+            margin: auto;
+            height: 80vh;
+        
+        }
+
+        .secondsection h1{
+            position:relative;
+            top:-230px;
+            
+        }
+
+        .secondsection span{
+            position:relative;
+            top:-230px;
+            
+        }
+
+
+        .text-gray{
+            color:gray;
+        }
+
+        .secondsection .box{
+            position:relative;
+            top:-230px;
+            
+            background:white;
+            width:80vw;
+            height:2px;
+            margin:56px 0;
+            display: flex;
+        }
+
+        .secondsection .vertical{
+            position:relative;
+            top:-230px;
+            
+            height: 93px;
+            width: 1px;
+            background-color: white;
+            margin:0 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+
+            <div class="circular--portrait">
+                <img src="https://photos.google.com/photo/AF1QipO-eIF4Lb05KKQstq2qdJUD3qfE4HHkk4Uw_sFf" Width="10%" class="logo">
+            </div>
+
+            <div class="left">Akash's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="/">Home </a></li>
+                    <li><a href="/">Projects</a></li>
+                    <li><a href="/">Services</a></li>
+                    <li><a href="/">Contact </a></li>
+                    <li><a href="/">About </a></li>
+                    
+                    
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+
+        <section class="firstsection">
+            <div class="leftsection">
+                Hi, My name is <span class="purple">Akash</span>
+
+                <div>and I am a passionate</div>
+                <!--<div>Web Developer</div>-->
+                <span id="element"></span>
+
+            </div>
+
+            <div class="rightsection">
+                <div class="images">
+                    <img src="shape.png" class="shape">
+                    <img src="pic.png" class="akash">
+
+                </div>
+            </div>
+        </section>
+
+        <!--<section class="p">
+            <p>This is my official portfolio website to showes all
+                <br>Details and work exiprins web development
+            </p>
+        </section> -->
+        <hr>
+        <section class="secondsection">
+            <span class"text-gray">
+                What I have done so far
+            </span>
+            <h1>Work Experience</h1>
+            
+            <div class="box">
+                
+            </div>
+            <div class="vertical"></div>
+            <div class="vertical"></div>
+            <div class="vertical"></div>
+            <div class="vertical"></div>
+        </section>
+    </main>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <!-- Setup and start animation! -->
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web Designer.', 'Graphic Designer.', 'Video Editor.', '<i>Web Developer.</i>'],
+            typeSpeed: 50,
+        });
+    </script>
+</body>
+
+</html>
